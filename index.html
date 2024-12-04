@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>GG-Editor: Locally Editing 3D Avatars with Multimodal Large Language Model Guidance</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,17 +56,16 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=SdJX4nAAAAAJ&hl=zh-CN" target="_blank">Yunqiu Xu</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=9ZukE28AAAAJ&hl=zh-CN" target="_blank">Linchao Zhu</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=zh-CN" target="_blank">Yi Yang</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">ReLER Lab, CCAI, Zhejiang University<br>ACM MM 2024</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -82,17 +81,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -106,7 +94,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3664647.3681039" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -148,7 +136,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Text-driven 3D avatar customization has attracted increasing attention in recent years, where precisely editing specific local parts of avatars with only text prompts is particularly challenging. Previous editing methods usually use segmentation or cross-attention masks as constraints for local editing. Although these masks tightly cover existing objects/parts, they may limit editing methods to create drastic geometry deformations beyond the covered contents. From a different perspective, this paper presents a GPT-guided local avatar editing framework, namely GG-Editor. Specifically, GG-Editor progressively mines more reasonable candidate editing regions via harnessing multimodal large language models which already organically assimilate common-sense human knowledge. In order to improve the editing quality of the local areas, GG-Editor explicitly decouples the geometry/appearance optimization, and adopts a global-local synergy editing strategy with GPT-generated local prompts. Moreover, to preserve concepts residing in source avatars, GG-Editor proposes an orthogonal denoising score that orthogonally decomposes editing directions and introduce an explicit term for preservation. Comprehensive experiments demonstrate that GG-Editor with only textual prompts achieves realistic and high-fidelity local editing results, significantly surpassing prior works.
           </p>
         </div>
       </div>
