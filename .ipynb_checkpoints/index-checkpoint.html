@@ -50,6 +50,20 @@
       line-height: 1.4;
       white-space: nowrap;
     }
+  table {
+      border-collapse: collapse; 
+      width: 100%; 
+    }
+    tr {
+      border: none; 
+    }
+    tr:nth-child(even):not(:last-child) {
+      border-bottom: 1px solid gray; 
+    }
+    td {
+      padding: 20px; 
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -191,12 +205,14 @@
 
 <table>
           <tr>
-	  <td><figure><img src="static/images/fat_belly_ours.gif" height="240" width="240"><img src="static/images/fat_belly_ours.gif" height="240" width="240"></figure>
-		  <h2 class="subtitle has-text-centered">
-	          hulk
-	        </h2></td>
+            <td><img src="static/images/fat_belly_ours.gif" height="240" width="240"><img src="static/images/fat_belly_ours.gif" height="240" width="240"></td>
 	    <td></td>
 	    <td><img src="static/images/fat_belly_ours.gif" height="240" width="240"><img src="static/images/fat_belly_ours.gif" height="240" width="240"></td>
+          </tr>
+          <tr>
+            <td colspan="1" align="center">Hulk</td>
+            <td></td>
+            <td colspan="1" align="center">Hulk with fat belly</td>
           </tr>
           <tr>
             <td><img src="static/images/fat_belly_ours.gif" height="240" width="240"><img src="static/images/fat_belly_ours.gif" height="240" width="240"></td>
